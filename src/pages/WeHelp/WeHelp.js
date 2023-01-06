@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import story from "../../images/story.svg";
 import "./weHelp.scss";
 
 const WeHelp = () => {
@@ -6,19 +7,19 @@ const WeHelp = () => {
     <section className="section__we__help">
       <Container fluid="xxl">
         <Row>
-          <Col  lg={6} xs={12}>
+          <Col lg={6} xs={12}>
             <h4>
               We Help Businesses
-              <br /> Solve the Most Complex Problems
+              <br /><span> Solve the Most Complex Problems</span>
             </h4>
             <p>
               Innovantage’s core values include learning from the experience,
               growing, and helping businesses solve problems
             </p>
-            <Button>More</Button>
+            <Button className="button__we__help">More</Button>
           </Col>
           <Col lg={6} xs={12}>
-            image
+            <img src={story} alt="story" />
           </Col>
         </Row>
       </Container>

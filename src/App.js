@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Landing from "./pages/landing/Landing";
-import Info from "./pages/info/Info";
+import AboutUs from "./pages/aboutUs/AboutUs";
 import OurApproach from "./pages/OurApproach/OurApproach";
 import WeHelp from "./pages/WeHelp/WeHelp";
 import ChooseUs from "./pages/ChooseUs/ChooseUs";
@@ -16,7 +16,7 @@ function App() {
       </header>
       <main>
         <Landing />
-        <Info />
+        <AboutUs />
         <OurApproach />
         <WeHelp />
         <ChooseUs />

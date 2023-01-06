@@ -1,12 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
-import './buildNow.scss';
+import zero from "../../images/zero.svg";
+import "./buildNow.scss";
 const BuildNow = () => {
   return (
     <section className="section__Build__now">
       <Container fluid="xxl">
         <Row>
           <Col className="title" lg={4} xs={12}>
-            image
+            <img src={zero} alt="zero" />
           </Col>
           <Col className="form" lg={8} xs={12}>
             <h4>Build Now, Pay Later</h4>

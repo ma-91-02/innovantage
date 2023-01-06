@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./infoNumber.scss";
+import "./aboutNumber.scss";
 
-const InfoNumber = () => {
+const AboutNumber = () => {
   return (
     <section className="section__info__number">
       <Container>
@@ -26,4 +26,4 @@ const InfoNumber = () => {
   );
 };
 
-export default InfoNumber;
+export default AboutNumber;

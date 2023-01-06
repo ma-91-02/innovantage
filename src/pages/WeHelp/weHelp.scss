@@ -1,4 +1,32 @@
 .section__we__help {
   height: 100vh;
   background-color: transparent;
+  margin-top: 150px;
+  color: #fff;
+  img{
+    width: 100%;
+  }
+  h4 {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: start;
+    span {
+      color: #ff9f78;
+    }
+  }
+  p{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: start;
+    margin-top: 32px;
+  }
+  .button__we__help{
+    background-image: linear-gradient(45deg,#A139E4, #6FA0D9);
+    width: 30%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 24px;
+    border: none;
+    margin-top:48px ;
+  }
 }

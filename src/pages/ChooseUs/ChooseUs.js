@@ -1,4 +1,11 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
+import ChildChooseUs from "../../components/childChooseUs/ChildChooseUs";
+import expenced from "../../images/expenced.svg";
+import product from "../../images/product.svg";
+import cutting from "../../images/cutting.svg";
+import value from "../../images/value.svg";
+import center from "../../images/center.svg";
+import innovative from "../../images/innovative.svg";
 import "./chooseUs.scss";
 
 const ChooseUs = () => {
@@ -7,32 +14,38 @@ const ChooseUs = () => {
       <Container fluid="xxl">
         <h4>Reasons to Choose Us</h4>
         <Row>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Experienced Team</h4>
-          </Col>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Innovative mindset</h4>{" "}
-          </Col>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Center of Excellence</h4>{" "}
-          </Col>
+          <ChildChooseUs
+            title="Experienced Team"
+            imgSrc={expenced}
+            alt="Experienced Team"
+          />
+          <ChildChooseUs
+            title="Innovative mindset"
+            imgSrc={innovative}
+            alt="Innovative mindset"
+          />
+          <ChildChooseUs
+            title="Center of Excellence"
+            imgSrc={center}
+            alt="Center of Excellence"
+          />
         </Row>
         <Row>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Product Accelerators</h4>
-          </Col>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Cutting edge technolgy</h4>
-          </Col>
-          <Col className="col__choose_us" lg={4} xs={12}>
-            img
-            <h4>Adding value</h4>
-          </Col>
+          <ChildChooseUs
+            title="Product Accelerators"
+            imgSrc={product}
+            alt="Product Accelerators"
+          />
+          <ChildChooseUs
+            title="Cutting edge technolgy"
+            imgSrc={cutting}
+            alt="Cutting edge technolgy"
+          />
+          <ChildChooseUs
+            title="Adding value"
+            imgSrc={value}
+            alt="Adding value"
+          />
         </Row>
       </Container>
     </section>

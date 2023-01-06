@@ -1,6 +1,8 @@
 import { Container, Row } from "react-bootstrap";
 import ChildApproach from "../../components/childApproach/ChildApproach";
-import pic1 from "../../images/1.svg";
+import evaluate from "../../images/evaluate.svg";
+import development from "../../images/Development.svg";
+import deployment from "../../images/Deployment.svg";
 import "./ourApproach.scss";
 const OurApproach = () => {
   return (
@@ -17,20 +19,20 @@ const OurApproach = () => {
           <ChildApproach
             title="Evaluate"
             content="Gather all the requirements from the client"
-            imgSrc={pic1}
-            alt=""
+            imgSrc={evaluate}
+            alt="evaluate"
           />
           <ChildApproach
             title="Development"
             content="Create a solution using the latest technology"
-            imgSrc=""
-            alt=""
+            imgSrc={development}
+            alt="development"
           />
           <ChildApproach
             title="Deployment"
             content="Deploy the system on production environment"
-            imgSrc=""
-            alt=""
+            imgSrc={deployment}
+            alt="deployment"
           />
         </Row>
       </Container>
