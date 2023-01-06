@@ -1,0 +1,22 @@
+.section__info {
+    height: 775px;
+    background-color: transparent;
+    color: #fff;
+  .img__info {
+    height: 750px;
+    border: 1px solid #fff;
+  }
+  .content__info {
+    h4{
+      font-size: 48px;
+      line-height: 56px;
+      text-align: start;
+      margin-bottom: 48px;
+    }
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      text-align: start;
+    }
+  }
+}

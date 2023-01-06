@@ -1,0 +1,15 @@
+.section__choose__us{
+    display: flex;
+    // flex-direction: row;
+    // align-items: space-between;
+    // justify-content:space-between ;
+    height:1312px;
+    background-color: transparent;
+    .col__choose_us{
+    padding: 15px;
+        height: 552px;
+        border: 1px solid #000;
+        // margin-bottom: 5vh;
+        // width: 35vh;
+    }
+}

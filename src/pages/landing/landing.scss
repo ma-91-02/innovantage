@@ -1,0 +1,66 @@
+.landing {
+  background-color: transparent;
+  height: calc(100vh - 5vh);
+  // padding-top: 80px;
+  // display: flex;
+  color: #fff;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    span{
+      color: #FF9F78;
+    }
+    h1 {
+      font-size: 88px;
+      text-align: start;
+      margin-bottom: 60px;
+      line-height: 96px;
+    }
+    p {
+      padding-right: 40px;
+      font-size: 40px;
+      text-align: start;
+      line-height: 48px;
+    }
+  }
+  .form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      padding: 20px;
+      padding-bottom: 0;
+      text-align: start;
+    }
+    .form__landing{
+      width: 100%;
+      padding: 20px;
+    }
+    .my__input__landing{
+      width: 100%;
+      height: 56px;
+    }
+    .button__landing{
+      background-image: linear-gradient(45deg,#A139E4, #6FA0D9);
+      width: 70%;
+      height: 60px;
+      font-size: 24px;
+      line-height: 24px;
+      border: none;
+      // transform: skewY(-6deg);
+      // transform-origin: top left;
+    }
+  }
+  // @media (min-width: 992px) {
+  //   .width {
+  //     min-width: 1080px;
+  //   }
+  // }
+}
