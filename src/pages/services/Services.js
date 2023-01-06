@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Service from "../../components/service/Service";
 import "./services.scss";
 
@@ -22,7 +22,6 @@ const Services = () => {
           <Service content="User Experience Design" to="ali" />
           <Service content="Web Development" to="ali" />
         </Row>
-        
       </Container>
     </section>
   );

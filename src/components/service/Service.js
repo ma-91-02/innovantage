@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./service.scss";
 
 const Service = ({ content, to }) => {
