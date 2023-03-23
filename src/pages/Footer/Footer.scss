@@ -1,0 +1,111 @@
+.footer{
+    margin-bottom: 72px;
+    .title__mini{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    h1{
+        display: flex;
+        justify-content: start;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    p{
+        display: flex;
+        justify-content: start;
+        font-weight: 400;
+        font-size: 40px;
+        color: #FFF;
+        text-align: start;
+        line-height: 48px;
+        margin-bottom: 32px;
+    }
+    .form{
+        margin-top: 20px;
+        ::placeholder {
+            color: #BBBBBB;
+        }
+        &-control{
+            height: 56px;
+            color: #6FA0D9;
+        }
+        .button__footer{
+            margin-top: 20px;
+            background: linear-gradient(272.69deg, #6FA0D9 0%, #A139E4 100%);
+            border-radius: 5px;
+            padding: 14px 64px;
+
+            font-weight: 400;
+            font-size: 32px;
+            border: none;
+        }
+    }
+}
+
+@media(max-width:991px){
+    .footer{
+        h1{
+            padding: 0 8px;
+        }
+        p{
+            padding: 0 8px;
+        }
+        .form{
+            .form-control{
+                padding: 40px 10px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        h1{
+            padding: 0 8px;
+        }
+        p{
+            padding: 0 8px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .footer{
+        margin-bottom: 20px;
+        h1{
+            font-size: 32px;
+            text-align: start;
+        }
+        p{
+            font-size: 22px;
+            line-height: 32px;
+            padding: 0 8px;
+        }
+        .title__mini{
+            p{
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+        }
+        .form{
+            margin-top: 0;
+            padding: 0 20px;
+            .button__footer{
+                font-size: 25px;
+                padding: 5px 25px;
+                margin-top: 0;
+            }
+            .form-control{
+                padding: 30px 10px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+

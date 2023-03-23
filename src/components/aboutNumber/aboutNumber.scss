@@ -1,5 +1,5 @@
 .section__info__number{
-    height: 200px;
+
     margin-top: 60px;
     span{
         color: #ff9f78;
@@ -12,5 +12,42 @@
         color: #fff;
         margin-top: 20px;
         margin-bottom: 60px;
+    }
+    
+}
+@media(max-width:991px){
+    .section__info__number{
+        .container{
+            max-width: 993px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .section__info__number{
+        span{
+            font-size: 100px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .section__info__number{
+        height: auto;
+        margin-top: 24px;
+        span{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+        }
+        p{
+            margin: 0px;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 16px;
+        }
     }
 }

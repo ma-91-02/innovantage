@@ -1,7 +1,6 @@
 .section__our__approach{
     background-color: transparent;
     margin-top: 150px;
-    height: 950px;
     color: #fff;
     .our__approach__content{
         height: 232px ;
@@ -20,4 +19,98 @@
     // .our_approach_block{
     //     height: 720px;
     // }
+}
+@media(max-width:991px){
+    .section__our__approach{
+        .our__approach__content{
+            p{
+                padding: 0 8px;
+                font-size: 35px;
+            }
+        }
+        .child__approach{
+            img{
+                height: 250px;
+            }
+            h4{
+                text-align: center;
+                font-size: 42px;
+            }
+            p{
+                text-align: center;
+                font-size: 38px;
+            }
+        }
+        
+    }
+}
+
+@media(max-width:768px){
+    .section__our__approach{
+        .our__approach__content{
+            p{
+                font-size: 30px;
+            }
+        }
+        .child__approach{
+            img{
+                height: 180px;
+            }
+            h4{
+                font-size: 35px;
+                text-align: center;
+            }
+            p{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .section__our__approach{
+        margin-top: 24px;
+        height: auto;
+        .our__approach__content{
+            height: auto;
+            margin-bottom: 0px;
+            h4{
+                line-height: 32px;
+                font-weight: 500;
+                font-size: 24px;
+                text-align: start;
+                padding: 0 20px;
+                margin-bottom: 16px;
+            }
+            p{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: start;
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .child__approach{
+            margin-bottom: 30px;
+            img{
+                height: 213px;
+            }
+            h4{
+                line-height: 35px;
+                padding: 0 8px;
+                font-weight: 500;
+                font-size: 26px;
+                text-align: center;
+                margin: 25px 0 0 0; 
+            }
+            p{
+                padding: 0 8px;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+    }
 }

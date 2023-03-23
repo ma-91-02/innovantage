@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <section className="landing">
       <Container fluid="xxl">
-        <Row>
+        <Row >
           <Col className="title" lg={8} xs={12}>
             <h1>
               We are <br /> <span>the Superheroes</span>
@@ -18,14 +18,14 @@ const Landing = () => {
           <Col className="form" lg={4} xs={12}>
             <p>Leave your contact information and we will call you back!</p>
             <Form className="form__landing">
-              <Form.Group  className="my__input__landing mb-2">
+              <Form.Group  className="my__input__landing ">
                 <Form.Control type="Text" placeholder="Full Name" />
               </Form.Group>
-              <Form.Group className="my__input__landing mb-2">
+              <Form.Group className="my__input__landing">
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
 
-              <Form.Group className="my__input__landing mb-2">
+              <Form.Group className="my__input__landing">
                 <Form.Control type="tel" placeholder="Phone number" />
               </Form.Group>
               <Button className="button__landing" variant="primary" type="submit">

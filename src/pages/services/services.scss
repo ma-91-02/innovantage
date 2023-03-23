@@ -1,7 +1,55 @@
 .section__Services{
     background-color: transparent;
-    height: 732px;
+    margin-bottom: 143px;
+    h4{
+        color: #FFF;
+        font-weight: 500;
+        font-size: 56px;
+        margin-bottom: 72px;
+    }
     .row__services{
         margin-bottom: 40px;
+    }
+}
+
+@media(max-width:768px){
+    .section__Services{
+        margin-top: 30px;
+        padding: 0 8px;
+        .col__Services{
+            h3{
+                font-size: 25px;
+            }
+            a{
+                font-size: 25px;
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .section__Services{
+        height: auto;
+        margin-bottom: 60px;
+        h4{
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        .row__services{
+            margin-bottom: 0;
+        }
+        .col__Services{
+            height: 132px;
+            h3{
+                font-size: 22px;
+            }
+
+        }
+        .col__ServicesWrap{
+            width: 280px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
     }
 }

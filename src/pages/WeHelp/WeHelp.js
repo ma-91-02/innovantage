@@ -7,7 +7,7 @@ const WeHelp = () => {
     <section className="section__we__help">
       <Container fluid="xxl">
         <Row>
-          <Col lg={6} xs={12}>
+          <Col lg={6} xs={12} className="we__help__padding">
             <h4>
               We Help Businesses
               <br /><span> Solve the Most Complex Problems</span>

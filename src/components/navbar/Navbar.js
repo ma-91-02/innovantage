@@ -5,13 +5,14 @@ import { Container, Navbar, Nav} from "react-bootstrap";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
 import './navbar.scss'
+import brand from'../../images/logo.svg'
 
 const Navbar3 = () => {
   return (
     <>
       <Navbar className="section__navbar" expand="lg">
         <Container>
-        <Navbar.Brand href="home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="home"><img src={brand} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav"className="justify-content-end">
           <Nav className="justify-content-end">

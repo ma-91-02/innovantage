@@ -8,6 +8,7 @@ const Services = () => {
       <Container fluid="xxl">
         <h4>Services</h4>
         <Row className="row__services">
+          
           <Service content="Agile Coaching" to="ali" />
           <Service content="Application Development" to="ali" />
           <Service content="Cloud DevOps" to="ali" />

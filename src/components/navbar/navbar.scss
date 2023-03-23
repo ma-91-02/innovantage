@@ -1,10 +1,25 @@
 .section__navbar{
     background-color: transparent;
-
+    img{
+        height: 100px;
+        width: auto;
+    }
     
     .my__nav__link{
         color: #fff;
         font-size: 24px;
-        margin-left: 15px;
+
+    }
+    .navbar-toggler-icon{
+        background-image: url('../../images/Dubble.svg');
+    }
+}
+
+@media(max-width:576px){
+    .section__navbar{
+        img{
+            height: 60px;
+            width: auto;
+        }
     }
 }

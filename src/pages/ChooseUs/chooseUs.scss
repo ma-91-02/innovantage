@@ -4,10 +4,50 @@
         font-size: 56px;
         margin-bottom: 72px;
     }
-    display: flex;
-    // flex-direction: row;
-    // align-items: space-between;
-    // justify-content:space-between ;
-    height:1312px;
-    background-color: transparent;
+}
+
+
+@media(max-width:991px){
+    .section__choose__us{
+        margin-top: 60px;
+        .child__choose__us{
+            h3{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .section__choose__us{
+        margin-top: 100px;
+    }
+    .child__choose__us{
+        img{
+            height: 200px;
+        }
+        h3{
+            color: #fff;
+            padding: 20px 0 40px 0; 
+        }
+    }
+}
+
+@media(max-width:576px){
+    .section__choose__us{
+        margin-top: 60px;
+        h4{
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        img{
+            height: 200px;
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
 }

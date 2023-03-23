@@ -7,6 +7,7 @@ import WeHelp from "./pages/WeHelp/WeHelp";
 import ChooseUs from "./pages/ChooseUs/ChooseUs";
 import BuildNow from "./pages/BuildNow/BuildNow";
 import Services from "./pages/services/Services";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ChooseUs />
         <BuildNow />
         <Services/>
+        <Footer/>
       </main>
     </div>
   );

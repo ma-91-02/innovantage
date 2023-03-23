@@ -8,7 +8,6 @@ const AboutUs = () => {
     <>
       <section className="section__about">
         <Container fluid="xxl">
-          <h4>About Us</h4>
           <Row>
             <Col className="img__about" lg={6} xs={12}>
               <img src={aboutUs} alt="about us"/>

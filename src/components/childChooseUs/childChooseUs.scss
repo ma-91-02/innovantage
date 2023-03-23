@@ -13,3 +13,11 @@
         text-align: start;
     }
 }
+
+@media(max-width:576px){
+    .section__choose__us{
+        h4{
+            font-size: 28px;
+        }
+    }
+}
