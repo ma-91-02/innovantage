@@ -16,6 +16,11 @@
     .navbar-toggler-icon{
         background-image: url('../../images/Dubble.svg');
     }
+    .navbar-toggler:focus{
+        box-shadow: none;
+        outline: #ff9f78  solid 3px;
+        
+    }
 
     .navbar-nav{
         .nav-link.active{
@@ -29,6 +34,13 @@
 
 .navbar{
     color: #fff;
+}
+@media(max-width:1199px){
+    .section__navbar{
+        .my__nav__link{
+            font-size: 18px;
+        }
+    }
 }
 @media(max-width:576px){
     .section__navbar{
