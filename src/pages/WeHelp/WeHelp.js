@@ -4,7 +4,7 @@ import "./weHelp.scss";
 
 const WeHelp = () => {
   return (
-    <section className="section__we__help">
+    <section className="section__we__help" id="weHelp">
       <Container fluid="xxl">
         <Row>
           <Col lg={6} xs={12} className="we__help__padding">

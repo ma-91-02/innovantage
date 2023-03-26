@@ -6,7 +6,7 @@ import deployment from "../../images/Deployment.svg";
 import "./ourApproach.scss";
 const OurApproach = () => {
   return (
-    <section className="section__our__approach">
+    <section className="section__our__approach" id="ourApproach">
       <Container fluid="xxl">
         <Row className="our__approach__content">
           <h4>Our Approach</h4>

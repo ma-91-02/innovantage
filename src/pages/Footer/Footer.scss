@@ -1,10 +1,17 @@
 .footer{
     margin-bottom: 72px;
     .title__mini{
-        p{
+        a{
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover{
+            transition: all 0.3s;
+            color: var(--text-color);
+            cursor: pointer;
         }
     }
     h1{
@@ -14,6 +21,16 @@
         font-size: 48px;
         color: #FFF;
         margin-bottom: 40px;
+    }
+    a{
+        display: flex;
+        justify-content: flex-start;// don't use just start 
+        font-weight: 400;
+        font-size: 40px;
+        color: #FFF;
+        text-align: start;
+        line-height: 48px;
+        margin-bottom: 32px;
     }
     p{
         display: flex;

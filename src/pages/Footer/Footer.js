@@ -15,14 +15,14 @@ const Footer = () => {
                     </p>
                     <Row>
                         <Col className="title__mini" lg={6} xs={5}>
-                        <p>Home</p>
-                        <p>About us </p>
-                        <p>Our Approach</p>
+                        <a href="#navbar">Home</a>
+                        <a href="#aboutUs">About us </a>
+                        <a href="#ourApproach">Our Approach</a>
                         </Col>
                         <Col className="title__mini" lg={6} xs={7}>
-                        <p>Our story</p>
-                        <p>Reasons to Choose Us</p>
-                        <p>Software Leasing</p>
+                        <a href="#weHelp">Our story</a>
+                        <a href="#chooseUs">Reasons to Choose Us</a>
+                        <a href="#services">Software Leasing</a>
                         </Col>
                     </Row>
                 </Col>

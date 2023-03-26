@@ -6,7 +6,7 @@ import "./aboutUs.scss";
 const AboutUs = () => {
   return (
     <>
-      <section className="section__about">
+      <section className="section__about" id="aboutUs">
         <Container fluid="xxl">
           <Row>
             <Col className="img__about" lg={6} xs={12}>

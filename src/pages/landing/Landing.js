@@ -3,7 +3,7 @@ import "./landing.scss";
 
 const Landing = () => {
   return (
-    <section className="landing">
+    <section className="landing" id="landing">
       <Container fluid="xxl">
         <Row >
           <Col className="title" lg={8} xs={12}>

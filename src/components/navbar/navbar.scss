@@ -10,11 +10,26 @@
         font-size: 24px;
 
     }
+    .my__nav__link:hover{
+        color: var(--text-color);
+    }
     .navbar-toggler-icon{
         background-image: url('../../images/Dubble.svg');
     }
+
+    .navbar-nav{
+        .nav-link.active{
+            color: #fff;
+        }
+        .nav-link.active:hover{
+            color: var(--text-color);
+        }
+    }
 }
 
+.navbar{
+    color: #fff;
+}
 @media(max-width:576px){
     .section__navbar{
         img{

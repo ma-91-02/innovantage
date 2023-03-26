@@ -4,7 +4,7 @@ import "./services.scss";
 
 const Services = () => {
   return (
-    <section className="section__Services">
+    <section className="section__Services" id="services">
       <Container fluid="xxl">
         <h4>Services</h4>
         <Row className="row__services">

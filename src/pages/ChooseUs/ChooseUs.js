@@ -10,7 +10,7 @@ import "./chooseUs.scss";
 
 const ChooseUs = () => {
   return (
-    <section className="section__choose__us">
+    <section className="section__choose__us" id="chooseUs">
       <Container fluid="xxl">
         <h4>Reasons to Choose Us</h4>
         <Row>
