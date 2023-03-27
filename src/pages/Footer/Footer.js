@@ -1,9 +1,21 @@
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./Footer.scss";
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Tick from '../../images/Tick.svg'
+import '../Modal/modal.scss'
+
 
 const Footer = () => {
+    const[modal, setModal] = useState(false)
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+    if(modal){
+        document.body.classList.add('modalHidden')
+    } else {
+        document.body.classList.remove('modalHidden')
+    }
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -20,6 +32,7 @@ const Footer = () => {
     return(
         <section className="footer">
             <Container fluid="xxl">
+                
                 <Row>
                 <Col className="title" lg={7} xs={12}>
                     <h1>
@@ -53,10 +66,25 @@ const Footer = () => {
                     <Form.Group className="my__input__footer mb-4">
                         <Form.Control type="tel" placeholder="Phone number" name="message" />
                     </Form.Group>
-                    <Button className="button__footer" variant="primary" type="submit">
+                    <Button onClick={toggleModal} className="button__footer" variant="primary" type="submit">
                         Call Me back!
                     </Button>
                     </Form>
+                    {modal && (
+              <div className='modal active'>
+            
+              <Row>
+                
+                <Col>
+                <img src={Tick} alt="Tick"></img>
+                <h3>Thank you</h3>
+                <Button className="close-modal" onClick={toggleModal}>✖</Button>
+                </Col>
+                
+              </Row>
+              
+            </div>
+            )}
                 </Col>
                 </Row>
             </Container>

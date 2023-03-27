@@ -1,9 +1,24 @@
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./landing.scss";
-import React, { useRef } from 'react';
+import React, { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import Tick from '../../images/Tick.svg';
+import '../Modal/modal.scss';
+
+
+
 
 const Landing = () => {
+  const[modal, setModal] = useState(false)
+  const toggleModal = () => {
+    setModal(!modal)
+  }
+  if(modal){
+    document.body.classList.add('modalHidden')
+  } else {
+    document.body.classList.remove('modalHidden')
+  }
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -11,12 +26,15 @@ const Landing = () => {
 
     emailjs.sendForm('service_hgbq63s', 'template_9v7cp2t', form.current, 'MtKPthrY_gOVlakqO')
       .then((result) => {
+
           console.log(result.text);
           console.log('message sent');
       }, (error) => {
           console.log(error.text);
       });
   };
+  
+
   return (
     <section className="landing" id="landing">
       <Container fluid="xxl">
@@ -44,11 +62,27 @@ const Landing = () => {
               <Form.Group className="my__input__landing">
                 <Form.Control type="tel" placeholder="Phone number" name="message" />
               </Form.Group>
-
-              <Button className="button__landing" variant="primary" type="submit">
+        
+              <Button onClick={toggleModal}  className="button__landing" variant="primary" type="submit">
                 Call Me back!
               </Button>
             </Form>
+            {modal && (
+              <div className='modal active'>
+            
+              <Row>
+                
+                <Col>
+                <img src={Tick} alt="Tick"></img>
+                <h3>Thank you</h3>
+                <Button className="close-modal" onClick={toggleModal}>✖</Button>
+                </Col>
+                
+              </Row>
+              
+            </div>
+            )}
+            
           </Col>
         </Row>
       </Container>

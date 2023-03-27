@@ -10,7 +10,7 @@ import brand from'../../images/logo.svg'
 const Navbar3 = () => {
   return (
     <>
-      <Navbar id="navbar" className="section__navbar" expand="lg">
+      <Navbar id="navbar" className="section__navbar"  expand="lg">
         <Container>
         <Navbar.Brand href="home"><img src={brand} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
