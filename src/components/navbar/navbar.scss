@@ -18,8 +18,11 @@
     }
     .navbar-toggler:focus{
         box-shadow: none;
-        outline: #ff9f78  solid 3px;
+        border: #ff9f78  solid 3px;
         
+    }
+    .navbar-toggler{
+        border: #fff 3px solid;
     }
 
     .navbar-nav{

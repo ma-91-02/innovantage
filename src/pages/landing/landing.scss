@@ -42,6 +42,18 @@
     .form__landing{
       width: 100%;
       padding: 20px;
+      .my__input__landing_checkbox{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px 0 20px 10px;
+        span{
+          margin-left: 10px;
+          a{
+            text-decoration: none;
+            color: var(--text-color);
+          }
+        }
+      }
     }
     .my__input__landing{
       width: 100%;
@@ -91,6 +103,7 @@
 
 @media (max-width: 768px){
   .landing{
+    margin-bottom: 90px;
     .title{
       height: 90vh;
       h1{
@@ -112,6 +125,7 @@
       }
       .my__input__landing{
         margin-bottom: 15px;
+        height: auto;
       }
       .button__landing{
         margin-top: 50px;

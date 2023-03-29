@@ -16,12 +16,12 @@ const Navbar3 = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav"className="justify-content-end">
           <Nav className="justify-content-end">
-            <Nav.Link className="my__nav__link" href="home">Home</Nav.Link>
+            <Nav.Link className="my__nav__link" href="#navbar">Home</Nav.Link>
             <Nav.Link className="my__nav__link" href="#aboutUs">About us</Nav.Link>
             <Nav.Link className="my__nav__link" href="#ourApproach">Our Approach</Nav.Link>
             <Nav.Link className="my__nav__link" href="#weHelp">Our Story</Nav.Link>
             <Nav.Link className="my__nav__link" href="#chooseUs">Reasons to choose Us</Nav.Link>
-            <Nav.Link className="my__nav__link" href="#services">Software Leasing</Nav.Link>
+            <Nav.Link className="my__nav__link" href="#services">Services</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         </Container>

@@ -4,6 +4,11 @@ import React, { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import Tick from '../../images/Tick.svg';
 import '../Modal/modal.scss';
+// import { Link } from "react-router-dom";
+
+
+
+
 
 
 
@@ -11,8 +16,9 @@ import '../Modal/modal.scss';
 const Landing = () => {
   const[modal, setModal] = useState(false)
   const toggleModal = () => {
-    setModal(!modal)
+    setModal()
   }
+
   if(modal){
     document.body.classList.add('modalHidden')
   } else {
@@ -26,7 +32,7 @@ const Landing = () => {
 
     emailjs.sendForm('service_hgbq63s', 'template_9v7cp2t', form.current, 'MtKPthrY_gOVlakqO')
       .then((result) => {
-
+          setModal(!modal)
           console.log(result.text);
           console.log('message sent');
       }, (error) => {
@@ -52,15 +58,22 @@ const Landing = () => {
             <p>Leave your contact information and we will call you back!</p>
             <Form className="form__landing" ref={form} onSubmit={sendEmail}>
               <Form.Group  className="my__input__landing ">
-                <Form.Control type="text" placeholder="Full Name" name="to_name"/>
+                <Form.Control required type="text" placeholder="Full Name" name="to_name"/>
               </Form.Group>
 
               <Form.Group className="my__input__landing" >
-                <Form.Control type="email" placeholder="Enter email" name="from_name" />
+                <Form.Control required type="email" placeholder="Enter email" name="from_name" />
               </Form.Group>
 
               <Form.Group className="my__input__landing">
-                <Form.Control type="tel" placeholder="Phone number" name="message" />
+                <Form.Control required type="tel" placeholder="Phone number" name="message" />
+              </Form.Group>
+
+              <Form.Group className="my__input__landing_checkbox">
+                <input required type="checkbox" />
+                <span>
+                  I agree with <a href="https://www.freeprivacypolicy.com/live/a21ce404-d12f-48da-889f-112171cc826d">privacy policy </a>
+                </span>
               </Form.Group>
         
               <Button onClick={toggleModal}  className="button__landing" variant="primary" type="submit">
@@ -69,24 +82,20 @@ const Landing = () => {
             </Form>
             {modal && (
               <div className='modal active'>
-            
-              <Row>
-                
+              <Row>               
                 <Col>
                 <img src={Tick} alt="Tick"></img>
                 <h3>Thank you</h3>
-                <Button className="close-modal" onClick={toggleModal}>✖</Button>
+                <Button className="close-modal" onClick={toggleModal}>Back</Button>
                 </Col>
-                
-              </Row>
-              
+              </Row>            
             </div>
             )}
-            
           </Col>
         </Row>
       </Container>
     </section>
+    
   );
 };
 

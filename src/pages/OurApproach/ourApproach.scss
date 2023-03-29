@@ -2,6 +2,7 @@
     background-color: transparent;
     margin-top: 150px;
     color: #fff;
+    margin-bottom: 190px;
     .our__approach__content{
         height: 232px ;
         margin-bottom: 60px;
@@ -16,9 +17,17 @@
             margin-bottom: 60px;
         }
     }
-    // .our_approach_block{
-    //     height: 720px;
-    // }
+    .child__approach{
+        img{
+            height: 390px;
+        }
+        h4{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
 }
 @media(max-width:991px){
     .section__our__approach{
@@ -47,6 +56,7 @@
 
 @media(max-width:768px){
     .section__our__approach{
+        margin-top: 80px;
         .our__approach__content{
             p{
                 font-size: 30px;
@@ -71,6 +81,7 @@
     .section__our__approach{
         margin-top: 24px;
         height: auto;
+        margin-bottom: 100px;
         .our__approach__content{
             height: auto;
             margin-bottom: 0px;

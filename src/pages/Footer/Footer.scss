@@ -51,6 +51,22 @@
             height: 56px;
             
         }
+        .my__input__footer_police{
+            input{
+                margin: 0 10px
+            }
+            text-align: start;
+            span{
+                font-size: 20px;
+                color: #FFF;
+            }
+            a{
+                display: initial;
+                font-size: 20px;
+                text-decoration: none;
+                color: var(--text-color);
+            }
+        }
         .button__footer{
             margin-top: 20px;
             background: linear-gradient(272.69deg, #6FA0D9 0%, #A139E4 100%);
@@ -60,6 +76,17 @@
             font-weight: 400;
             font-size: 32px;
             border: none;
+            
+        }
+    }
+}
+@media(max-width:1024px){
+    .footer{
+        h1{
+            text-align: start;
+        }
+        p{
+            font-size: 30px;
         }
     }
 }
@@ -88,6 +115,9 @@
         }
         p{
             padding: 0 8px;
+        }
+        .title__mini{
+            padding: 0 20px;
         }
     }
 }
