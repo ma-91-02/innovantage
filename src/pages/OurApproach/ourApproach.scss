@@ -29,6 +29,64 @@
         }
     }
 }
+@media(max-width:1440px){
+    .section__our__approach{
+        .our__approach__content{
+            p{
+                font-size: 35px;
+                margin-bottom: 10px;
+                line-height: 40px;
+            }
+            margin-bottom: 10px;
+            h4{
+                margin-bottom: 10px;
+                
+            }
+        }
+        .child__approach{
+            h4{
+                margin-bottom: 0;
+                font-size: 40px;
+            }
+            img{
+                height: 260px;
+            }
+            p{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    .section__our__approach{
+        .our__approach__content{
+            p{
+                font-size: 35px;
+                margin-bottom: 10px;
+                line-height: 40px;
+            }
+            margin-bottom: 10px;
+            h4{
+                margin-bottom: 10px;
+                
+            }
+        }
+        .child__approach{
+            h4{
+                margin-bottom: 0;
+                font-size: 40px;
+            }
+            img{
+                height: 230px;
+            }
+            p{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
 @media(max-width:991px){
     .section__our__approach{
         .our__approach__content{
@@ -88,15 +146,15 @@
             h4{
                 line-height: 32px;
                 font-weight: 500;
-                font-size: 24px;
+                font-size: 28px;
                 text-align: start;
                 padding: 0 20px;
                 margin-bottom: 16px;
             }
             p{
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 32px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
                 text-align: start;
                 padding: 0 20px;
                 margin-bottom: 20px;

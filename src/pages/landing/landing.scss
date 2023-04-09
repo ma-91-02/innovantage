@@ -1,3 +1,5 @@
+
+
 .landing {
   background-color: transparent;
   position: relative;
@@ -75,6 +77,29 @@
   //     min-width: 1080px;
   //   }
   // }
+}
+@media (max-width: 1440px){
+  .landing{
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1024px){
+  .landing{
+    .title{
+      h1{
+        font-size: 70px;
+      }
+      p{
+        font-size: 30px;
+      }
+    }
+    .form{
+      p{
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+  }
 }
 @media (max-width: 991px){
   .landing{
