@@ -20,7 +20,7 @@ const AboutNumber = () => {
               {counterOn && <CountUp start={0} end={23} duration={2} delay={0}/>}
             </span>
             
-              <p>Team Members</p>
+              <p>team members</p>
             </div>
             </ScrollTrigger>
           </Col>
@@ -32,7 +32,7 @@ const AboutNumber = () => {
               +
             </span>
             
-              <p>Team Members</p>
+              <p>customers</p>
             </div>
             </ScrollTrigger>
           </Col>
@@ -44,7 +44,7 @@ const AboutNumber = () => {
               +
             </span>
             
-              <p>Team Members</p>
+              <p>projects</p>
             </div>
             </ScrollTrigger>
           </Col>
