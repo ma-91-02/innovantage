@@ -2,11 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 body {
-  margin: 0;
   font-family: 'Montserrat', sans-serif!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./images/backphoto.svg'),linear-gradient(#1B3754, #68ADF2,#7298BE)!important;
+  background-image: url('./images/backphoto.svg'),linear-gradient(#1B3754, #68ADF2,#7298BE);
   color: #fff;
   background-position: top;
 }

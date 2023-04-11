@@ -3,25 +3,25 @@ import Service from "../../components/service/Service";
 import "./services.scss";
 
 const Services = () => {
+  
   return (
     <section className="section__Services" id="services">
       <Container fluid="xxl">
         <h4>Services</h4>
         <Row className="row__services">
-          
-          <Service content="Agile Coaching" to="ali" />
-          <Service content="Application Development" to="ali" />
-          <Service content="Cloud DevOps" to="ali" />
+          <Service content="Agile Coaching" to='We coming soon' />
+          <Service content="Application Development" to='We coming soon' />
+          <Service content="Cloud DevOps" to="We coming soon" />
         </Row>
         <Row className="row__services">
-          <Service content="Cloud Migration" to="ali" />
-          <Service content="Data Engineering" to="ali" />
-          <Service content="Data Science" to="ali" />
+          <Service content="Cloud Migration" to='We coming soon' />
+          <Service content="Data Engineering" to="We coming soon" />
+          <Service content="Data Science" to="We coming soon" />
         </Row>
         <Row className="row__services">
-          <Service content="Center of Excellence" to="ali" />
-          <Service content="User Experience Design" to="ali" />
-          <Service content="Web Development" to="ali" />
+          <Service content="Center of Excellence" to="We coming soon" />
+          <Service content="User Experience Design" to="We coming soon" />
+          <Service content="Web Development" to="We coming soon" />
         </Row>
       </Container>
     </section>

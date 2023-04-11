@@ -80,7 +80,10 @@ const Landing = () => {
                 Call Me back!
               </Button>
             </Form>
-            {modal && (
+           
+          </Col>
+        </Row>
+        {modal && (
               <div className='modal active'>
               <Row>               
                 <Col>
@@ -91,8 +94,6 @@ const Landing = () => {
               </Row>            
             </div>
             )}
-          </Col>
-        </Row>
       </Container>
     </section>
     

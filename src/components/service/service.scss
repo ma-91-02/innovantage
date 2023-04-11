@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     height: 172px;
     border-radius: 10px;
@@ -10,20 +11,20 @@
     margin-right: 40px;
     margin-bottom: 0;
     margin-top: 0;
-    background: #C4E0FB;
     padding: 20px 0 10px 0;
+    background: #C4E0FB;
     h3{
         color: #8E5EDF;
         font-weight: 300;
         font-size: 32px;
     }
-    a{
+    button{
         width: 175px;
         height: 52px;
         background: linear-gradient(272.69deg, #6FA0D9 0%, #A139E4 100%);
         padding: 16px 66px ;
         border-radius: 5px;
-
+        border: none;
         text-align: center;
         font-weight: 400;
         font-size: 16px;
@@ -52,3 +53,12 @@
 // .col__Services:first-child{
 //     margin-left: 0;
 // }
+.wrapper_more{
+    top: 0;
+    left: 0;
+    height: 500%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.519);
+    position: fixed;
+    z-index: 100;
+}

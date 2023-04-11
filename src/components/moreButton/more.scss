@@ -1,0 +1,34 @@
+
+    .box_more{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 50%;
+        background: #C4E0FB;
+        z-index: 10;
+        border-radius: 10px;
+        color: #8E5EDF;
+        button{
+            margin-top: 30px;
+            background-image: linear-gradient(45deg,#A139E4, #6FA0D9);
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 576px){
+        .box_more{
+            width: 350px;
+            height: 200px;
+        }
+    }
